@@ -179,10 +179,11 @@ figure.photo-left{
 */
 
 h2.komidashi{
-	clear: both;
-  background-color:#1e90ff;
-  margin-top: 3px;
-  font-size: 30px;
+clear: both;
+background-color:#1e90ff;
+margin-top: 3px;
+font-size: 30px;
+text-align: center;
 
 	/*border-bottom: solid 7px #4169e1;*/
 
