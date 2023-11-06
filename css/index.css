@@ -1,0 +1,149 @@
+body{
+  background-color: white;
+  margin: 0;
+  padding: 0;
+   font-family: Arial, sans-serif;
+}
+
+/* h1タグのアニメーション処理 */
+h1{
+    color: black;
+    font-family: YuGothic, 游ゴシック,"Yu Gothic", "Noto Sans Japanese", sans-serif;
+    text-align:center;
+    font-size:70px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 250px;
+    animation-name: fade;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+  }
+  
+  @keyframes fade{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+
+/* 以下はメニューバーの処理 */
+.menu-bar {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  position: relative; /* 相対位置指定 */
+}
+
+.menu-bar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.menu-bar li {
+  margin: 0 20px;
+}
+
+.menu-bar a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+  position: relative;
+}
+
+/* 修正: .menu-bar a::before と .menu-bar a:hover::before を削除 */
+.menu-bar a:hover {
+  color: #ddd;
+  background-color: purple; /* 背景色を紫色に変更 */
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* スマートフォン表示時のスタイル */
+@media (max-width: 768px) {
+  .menu-bar ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      background-color: #333;
+      text-align: center;
+      width: 100%;
+      z-index: 1;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .menu-bar.active ul {
+      display: flex;
+  }
+
+  .menu-bar li {
+      display: block;
+      margin: 10px 0;
+  }
+
+  .menu-toggle {
+      display: block;
+      cursor: pointer;
+      margin: 10px;
+  }
+
+  .menu-toggle .bar {
+      background-color: white;
+      height: 3px;
+      width: 25px;
+      margin: 5px 0;
+      border-radius: 3px;
+      transition: background-color 0.3s;
+  }
+
+  .menu-toggle.active .bar {
+      background-color: #333;
+  }
+  
+  /* 修正: .menu-bar a:hover に関する修正は適用 */
+  .menu-bar a:hover {
+      background-color: purple;
+  }
+}
+
+button{
+  display: block;
+	margin: auto;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.849);
+  /* background-color: rgb(192, 113, 223); */
+  padding: 20px;
+  /* padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px; */
+  text-decoration: none;
+  color: rgb(2, 2, 2);
+ 
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 4px 4px 0 0 gray;
+  font-size: 40px;
+  /* -webkit-text-fill-color: transparent; */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(252, 252, 252);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+button:hover {
+  color: #007db9;;
+  box-shadow: none;
+  background: #fff;
+  transform: translate3d(0, 5px, 0);
+}
