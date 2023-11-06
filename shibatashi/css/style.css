@@ -46,12 +46,12 @@
       font-size: 30px;
       padding: 15px;
       margin-bottom:40px;
-      text-align: center;
+     
       background-color: #4ec4d3;
 
       margin: auto;
       clear: both;
-
+	text-align: center;
     }
 
     .setumei{/*このwebアプリは～*/
