@@ -290,7 +290,7 @@ h2.komidashi a{
 /* 修正: .menu-bar a::before と .menu-bar a:hover::before を削除 */
 .menu-bar a:hover {
   color: #ddd;
-  background-color: purple; /* 背景色を紫色に変更 */
+  background-color: rgb(20, 20, 163); /* 背景色を紫色に変更 */
   padding: 5px 15px;
   border-radius: 5px;
   cursor: pointer;
