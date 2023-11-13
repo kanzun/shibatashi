@@ -1,19 +1,26 @@
 @charset "UTF-8";
 
-   @media only screen and (max-width: 1200px) {
+body{
+  padding-left: 5px;
+  padding-right:5px;
+  }
 
-      header{
-        width: 100%;
-      }
-      body{
-        width: 100%;
-      }
+  header{
+    background-color: #6495ed;
+    border-bottom: solid 7px #808080;
+    margin-bottom: 30px;
+    -webkit-box-shadow: 0 1px 7px #aaaaaa;
+    box-shadow: 0 1px 7px #aaaaaa;
+    padding: 3px;
+    font-weight :60px;
+    font-size: 20px;
+  }
 
-    
-    } 
+  header h1{
+    font-size: 35px
+  }
 
-/*.megane_sp { display: block !important; }*/
-
+/*メニューバー*/
  .menu{
  	display: inline;
 	text-align: right;
@@ -21,243 +28,43 @@
 	margin-bottom: 10px;
 	padding: auto;
   }
-
-
-.title {
-
-	/*
-      -webkit-text-fill-color: transparent;
-      -webkit-text-stroke-width: 2px;
-      -webkit-text-stroke-color: black;
-	*/
-      /* text-shadow: 0px 0px #1fa3ef, 10px 0px 4px #222; */
-      background-color: azure;
-      font-weight :200px;
-      font-size: 50px;
-      padding-bottom: 5px;
-      padding-top: 5px;
-
-     border: double 5px #4ec4d3;
-      color: black;
-    }
-
-
-   .setumei-title{/*このアプリについて*/
-      font-size: 30px;
-      padding: 15px;
-      margin-bottom:40px;
-     
-      background-color: #4ec4d3;
-
-      margin: auto;
-      clear: both;
-	text-align: center;
-    }
-
-    .setumei{/*このwebアプリは～*/
-      font-size: 30px;
-      border-radius: 0ch;
-      padding: 10px;
-      /*margin: 50px;*/
-      margin-bottom: 10px;
-      border: 3px double lightblue;
-      border-radius: 20px;
-      background-color: white;
-
-    }
-
-    button.btn {
-      border-radius: 25px;
-      background-color: rgb(223, 166, 113);
-      /* background-color: rgb(192, 113, 223); */
-      padding: 8px;
-      padding-top: 50px;
-      padding-bottom: 50px;
-      padding-left: 50px;
-      padding-right: 50px;
-      text-decoration: none;
-      color: lightsteelblue;
-     
-      margin-top: auto;
-      margin-left: auto;
-      margin-right: auto;
-      box-shadow: 4px 4px 0 0 gray;
-      font-size: 40px;
-      -webkit-text-fill-color: transparent;
-      -webkit-text-stroke-width: 1px;
-      -webkit-text-stroke-color: black;
-      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-      font-size: 40px;
-    }
-    button:hover {
-      color: #007db9;;
-      box-shadow: none;
-      background: rgb(223, 166, 113);
-      transform: translate3d(0, 5px, 0);
-    }
-
+  nav ul {
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    font-size: 0;
+  }
+  
+  nav li.b{
+    display: inline;
+    font-size: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  nav li.a{
+    display: inline;
+    font-size: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  nav{
+    width: 455px;
+    margin-left: auto;
+    background-color: #33CCFF;
+    text-align: right;
+    margin-top: -27px;
+    margin-bottom: 10px
+  }
+  
+  nav a{
+    color: #000000;
     
-   
+  }
 
-    /*
-    button {
-      background-color: purple;
-      color: #fff;
-      border: 1px purple solid;
-      font-size: 14px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      padding: 20px 30px;
-      overflow: hidden;
-      margin: 10px 0;
-      position: relative;
-    }
-     button .circle {
-      position: absolute;
-      background-color: #fff;
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      transform: translate(-50%, -50%) scale(0);
-      animation: scale 0.5s ease-out;
-    }
-    @keyframes scale {
-      to {
-        transform: translate(-50%, -50%) scale(3);
-        opacity: 0;
-      }
-    }
-    */
-  
-    .shiyou{/*使用方法*/
-      padding:20px;
-      font-size : 40px;
-      margin: top 20px;
-      margin-bottom: 40px;
-      margin-bottom: 20px;
-      color: rgb(52, 52, 63);
-      background-color: lightsteelblue;
-
-    }
-
-    .shiyou-s {/*1．下記の～*/
-      margin-bottom: 40px;
-      padding: 20px 20px 20px 20px;
-      border: 3px double lightblue;
-      border-radius: 20px;
-      background-color: white;
-      font-size: 30px;
-    }
-    /*
-     body.sen{
-     border-left: double 7px gray;
-     border-right: double 7px gray;
-      padding-left: 3px;
-      padding-right:3px;
-    }
-    */
-     body{
-    padding-left: 5px;
-      padding-right:5px;
-    }  
-
-
-    .foot {
-      margin-top: 30px;
-      font-size: 15px;
-      background-color: cadetblue;
-
-    }
-/*
-figure.photo-left{
-	margin:0;
-	margin-right: 20px;
-	margin-bottom: 20px;
-	margin-left: 10px;
-	float: center
-}
-*/
-
-h2.komidashi{
-clear: both;
-background-color:#1e90ff;
-margin-top: 3px;
-font-size: 30px;
-text-align: center;
-
-	/*border-bottom: solid 7px #4169e1;*/
-
-}
-
-
-p.kaisetu{
-	font-family:'Arial','Hiragino Kaku Gothic Pro',sans-selif;
-	font-size: 25px;
-  font-weight :100px;
-
-}
-header{
-	background-color: #6495ed;
-	border-bottom: solid 7px #808080;
-	margin-bottom: 30px;
-	-webkit-box-shadow: 0 1px 7px #aaaaaa;
-	box-shadow: 0 1px 7px #aaaaaa;
-	padding: 3px;
-  font-weight :60px;
-  font-size: 20px;
-}
-
-nav ul {
-  list-style-type: none;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-  font-size: 0;
-}
-
-nav li.b{
-  display: inline;
-  font-size: 25px;
-  /* border-right: solid 1px #000000; */
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-nav li.a{
-  display: inline;
-  font-size: 25px;
-
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-
-
-nav{
-  width: 455px;
-  margin-left: auto;
-  background-color: #33CCFF;
-  
-  text-align: right;
-  margin-top: -27px;
-  margin-bottom: 10px
-}
-
-nav a{
-  color: #000000;
-  
-}
-
-header h1{
-  font-size: 35px
-}
-
-h2.komidashi a{
-  color: #000000;
-  text-decoration: none;
-}
-
-/*メニューバーアニメーション*/
+  /*メニューバーアニメーション*/
 
 .menu-bar {
   color: white;
@@ -294,4 +101,102 @@ h2.komidashi a{
   padding: 5px 15px;
   border-radius: 5px;
   cursor: pointer;
+}
+
+   .setumei-title{/*このアプリについて*/
+      font-size: 30px;
+      padding: 15px;
+      margin-bottom:40px;
+      background-color: #4ec4d3;
+
+      margin: auto;
+      clear: both;
+    text-align: center;
+    }
+
+    .setumei{/*このwebアプリは～*/
+      font-size: 30px;
+      border-radius: 0ch;
+      padding: 10px;
+      /*margin: 50px;*/
+      margin-bottom: 10px;
+      border: 3px double lightblue;
+      border-radius: 20px;
+      background-color: white;
+
+    }
+    /*ボタン*/
+    button.btn {
+      border-radius: 25px;
+      background-color: rgb(223, 166, 113);
+      padding: 8px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      padding-left: 50px;
+      padding-right: 50px;
+      text-decoration: none;
+      color: lightsteelblue;
+     
+      margin-top: auto;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 4px 4px 0 0 gray;
+      font-size: 40px;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: black;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 40px;
+    }
+    button:hover {
+      color: #007db9;;
+      box-shadow: none;
+      background: rgb(223, 166, 113);
+      transform: translate3d(0, 5px, 0);
+    }
+  
+    .shiyou{/*使用方法*/
+      padding:20px;
+      font-size : 40px;
+      margin: top 20px;
+      margin-bottom: 40px;
+      margin-bottom: 20px;
+      color: rgb(52, 52, 63);
+      background-color: lightsteelblue;
+
+    }
+
+    .shiyou-s {/*1．下記の～*/
+      margin-bottom: 40px;
+      padding: 20px 20px 20px 20px;
+      border: 3px double lightblue;
+      border-radius: 20px;
+      background-color: white;
+      font-size: 30px;
+    }
+    /*フッター*/
+    .foot {
+      margin-top: 30px;
+      font-size: 15px;
+      background-color: cadetblue;
+
+    }
+
+h2.komidashi{
+	clear: both;
+  background-color:#1e90ff;
+  margin-top: 3px;
+  font-size: 30px;
+  text-align: center;
+}
+
+h2.komidashi a{
+  color: #000000;
+  text-decoration: none;
+}
+
+p.kaisetu{
+	font-family:'Arial','Hiragino Kaku Gothic Pro',sans-selif;
+	font-size: 25px;
+  font-weight :100px;
 }
