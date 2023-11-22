@@ -135,9 +135,10 @@ body{
       text-decoration: none;
       color: lightsteelblue;
      
-      margin-top: auto;
+      margin-top: 50px;
       margin-left: auto;
       margin-right: auto;
+      margin-bottom: auto;
       box-shadow: 4px 4px 0 0 gray;
       font-size: 40px;
       -webkit-text-fill-color: transparent;
@@ -217,6 +218,7 @@ ol {
   background-color: rgb(210, 232, 247);
   box-sizing: border-box;
 }
+
 #mokuji li {
   margin-top: 2px;
   margin-left: 50px;
