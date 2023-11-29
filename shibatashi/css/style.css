@@ -221,9 +221,12 @@ ol {
 
 #mokuji li {
   list-style-type: none;
-  text-decoration: none;
   margin-top: 2px;
   margin-left: 50px;
+}
+
+#mokuji li a{
+	text-decoration: none;
 }
 /* li::before {
   counter-increment: counter;
