@@ -227,6 +227,7 @@ ol {
 
 #mokuji li a{
 	text-decoration: none;
+	color: blue;
 }
 /* li::before {
   counter-increment: counter;
